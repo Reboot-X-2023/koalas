@@ -37,7 +37,7 @@ if __name__ == "__main__":
     res = "No queries yet"
     while True:
         input_string = input()
-        input_string = "Return code ONLY (nothing else) that would answer the following query based on the transactions_df data: " + input_string + ". Store this in a variable called res. If you define a function, also run the function."
+        input_string = "Return code ONLY (nothing else) that would answer the following query based on the transactions_df data: " + input_string + ". Store this in a variable called res. If you define a function, also give the code to run the function."
         command = query(input_string, client)
         exec(command)
         print(command)
