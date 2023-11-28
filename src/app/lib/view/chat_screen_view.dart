@@ -40,7 +40,14 @@ class ChatScreenState extends State<ChatScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Koalas Chat'),
+        title: const Text(
+          'Welcome Connor',
+          style: TextStyle(
+            color: Colors.white, // Change the color to your desired value
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: const Color(0xff03694C),
       ),
       body: Column(
         children: <Widget>[
