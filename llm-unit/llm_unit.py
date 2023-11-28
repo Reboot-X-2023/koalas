@@ -22,4 +22,3 @@ if __name__ == "__main__":
     command = query(input_string, client)
     exec(command)
     print(res)
-
