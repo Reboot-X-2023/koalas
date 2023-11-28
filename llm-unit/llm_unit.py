@@ -14,11 +14,12 @@ def query(input_string, client):
     return completion.choices[0].message.content 
 
 
-if __name__ = "__main__":
-    transactions_df = pd.read_csv("../user_data.csv")
+if __name__ == "__main__":
+    transactions_df = pd.read_csv("user_data.csv")
     transactions_df = transactions_df.rename(columns= {"amount":"transaction_amount"})
     client = OpenAI()
     input_string = "Return ONLY code (nothing else) that would find the total amount spent. Store this in a variable res"
     command = query(input_string, client)
     exec(command)
     print(res)
+
