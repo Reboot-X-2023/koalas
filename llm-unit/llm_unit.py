@@ -14,7 +14,6 @@ def query(input_string, client):
     )
     return completion.choices[0].message.content 
 
-
 if __name__ == "__main__":
     transactions_df = pd.read_csv("user_data.csv")
     transactions_df = transactions_df.rename(columns= {"amount":"transaction_amount"})
